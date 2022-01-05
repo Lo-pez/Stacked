@@ -1,0 +1,30 @@
+{  
+    "user": {  
+        "name":       "sonoo",   
+        "salary":      56000,   
+        "spending":    100000,
+        "saving": 500,
+        "Most visited restaurant": "Arby's",
+        "metrics": {
+            "Food": 12,
+            "Entertainment": 24,
+            "Rent": 15,
+            "Savings": 25,
+            "Investments": 24
+        },
+        "metrics_old": {
+            "Food": 12,
+            "Entertainment": 24,
+            "Rent": 24,
+            "Savings": 20,
+            "Investments": 20
+        },
+        "comparable_metrics": {
+            "Food": 10,
+            "Entertainment": 16,
+            "Rent": 50,
+            "Savings": 12,
+            "Investments": 12
+        }
+    }  
+}  
