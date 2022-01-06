@@ -6,6 +6,7 @@ import UserData from '../components/UserData';
 import SignIn from '../components/SignIn';
 import SignUp from '../components/SignUp';
 import SplashScreen from '../components/SplashScreen';
+import Wrapped from '../components/Wrapped'
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ function MyStack() {
       <Stack.Screen name="SignIn" component={SignIn} options={{headerShown:false}} />
       <Stack.Screen name="SignUp" component={SignUp} options={{headerShown:false}} />
       <Stack.Screen name="SplashScreen" component={SplashScreen} options={{headerShown:false}} />
+      <Stack.Screen name="Wrapped" component={Wrapped} options={{headerShown:false}} />
     </Stack.Navigator>
   );
 }

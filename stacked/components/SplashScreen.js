@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
     title: {
         color: '#05375a',
         fontSize: 30,
-        fontWeight: 'bold',
+        fontWeight: '700',
     },
     button: {
         alignItems: 'flex-end',
@@ -92,6 +92,6 @@ const styles = StyleSheet.create({
     },
     text: {
         color: '#ffffff',
-        fontWeight: 'bold',
+        fontWeight: '700',
     }
   });
