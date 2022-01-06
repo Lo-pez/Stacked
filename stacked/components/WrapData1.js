@@ -21,7 +21,7 @@ const WrapData1 = ({navigation}) => {
         duration={2000}
         delay={100}
         style={styles.title}>
-        changed throughout the year.
+        changed throughout the month.
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInLeft"

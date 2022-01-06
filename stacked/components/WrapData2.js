@@ -7,106 +7,52 @@ const WrapData2 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Animatable.Text
-        animation="fadeInLeft"
+        animation="bounceIn"
         direction="alternate"
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        WARPDATA2
+        Vaycay?
       </Animatable.Text>
-      <Animatable.Text
-        animation="fadeInLeft"
-        direction="alternate"
+
+      <Animatable.View
+        animation="bounceIn"
         easing="ease-out-cubic"
         duration={2000}
-        delay={100}
-        style={styles.title}>
-        TEMP
-      </Animatable.Text>
-      <Animatable.Text
-        animation="fadeInLeft"
+        delay={600}
+        style={{marginTop: 80}}>
+        <Text style={styles.compare}>
+          <Text>You spent </Text>
+          <Text>${data.user.new_metrics.wants.vacations}</Text>
+        </Text>
+
+        <Text style={styles.compare}>on Vacation this month!</Text>
+      </Animatable.View>
+
+      <Animatable.View
+        animation="bounceIn"
         easing="ease-out-cubic"
         duration={2000}
-        delay={400}
+        delay={600}
+        style={{marginTop: 120}}>
+        <Text style={styles.compare2}>To compare,</Text>
+        <Text style={styles.compare2}>
+          you spent ${data.user.old_metrics.wants.vacations} last
+        </Text>
+        <Text style={styles.compare2}>month for good shades.</Text>
+      </Animatable.View>
+
+      <Animatable.Text
+        animation="bounceIn"
+        easing="ease-out-cubic"
+        duration={2000}
+        delay={1000}
         style={styles.desc}>
-        (you gotta spend to live, right?)
+        (sometimes, you need to reeelax 😎)
       </Animatable.Text>
-
-      <Animatable.View
-        animation="fadeInRight"
-        easing="ease-out-cubic"
-        duration={2000}
-        delay={600}
-        style={{marginTop: 50}}>
-        <Text style={styles.compare}>
-          <Text>Rent: </Text>
-          <Text
-            style={{
-              color: '#7393B3',
-              textDecorationLine: 'line-through',
-              textDecorationStyle: 'solid',
-              fontSize: 18,
-            }}>
-            ${data.user.old_metrics.needs.rent}
-          </Text>
-          <Text> to ${data.user.new_metrics.needs.rent}</Text>
-        </Text>
-
-        <Text style={styles.compare}>
-          <Text>Groceries: </Text>
-          <Text
-            style={{
-              color: '#7393B3',
-              textDecorationLine: 'line-through',
-              textDecorationStyle: 'solid',
-              fontSize: 18,
-            }}>
-            ${data.user.old_metrics.needs.groceries}
-          </Text>
-          <Text> to ${data.user.new_metrics.needs.groceries}</Text>
-        </Text>
-
-        <Text style={styles.compare}>
-          <Text>Utilities: </Text>
-          <Text
-            style={{
-              color: '#7393B3',
-              textDecorationLine: 'line-through',
-              textDecorationStyle: 'solid',
-              fontSize: 18,
-            }}>
-            ${data.user.old_metrics.needs.utilities}
-          </Text>
-          <Text> to ${data.user.new_metrics.needs.utilities}</Text>
-        </Text>
-      </Animatable.View>
-
-      <Animatable.View
-        animation="fadeInLeft"
-        easing="ease-out-cubic"
-        duration={2000}
-        delay={600}
-        style={styles.funFact}>
-        <Animatable.Text
-          animation="pulse"
-          easing="ease-in-out"
-          iterationCount="infinite"
-          iterationDelay={2000}
-          delay={1500}
-          duration={2000}
-          style={{
-            textAlign: 'center',
-            fontSize: 14,
-            lineHeight: 24,
-            fontWeight: 'bold',
-            color: '#000',
-          }}>
-          (You have saved $0 on rent! 🏠)
-        </Animatable.Text>
-      </Animatable.View>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData1')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData3')}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"
@@ -131,39 +77,35 @@ const styles = StyleSheet.create({
     // Set content's horizontal alignment.
     //alignItems: 'center',
     padding: 30,
-    backgroundColor: '#7DF9FF',
+    backgroundColor: '#ffffff',
   },
   top: {
     //textAlign: 'center',
     marginTop: 30,
-    fontSize: 35,
+    fontSize: 45,
     fontWeight: 'bold',
     lineHeight: 50,
     color: '#000',
   },
-  title: {
-    //textAlign: 'center',
-    color: '#000',
-    fontSize: 35,
-    fontWeight: 'bold',
-    lineHeight: 45,
-  },
   desc: {
     color: '#000',
-    marginTop: 20,
+    marginTop: 90,
     fontSize: 15,
     lineHeight: 15,
     fontWeight: 'bold',
   },
   compare: {
     color: '#000',
-    marginTop: 10,
-    fontSize: 22,
-    lineHeight: 24,
+    fontSize: 26,
+    lineHeight: 35,
     fontWeight: 'bold',
   },
-  funFact: {
-    marginTop: 190,
+  compare2: {
+    color: '#000',
+    fontSize: 26,
+    lineHeight: 35,
+    fontWeight: 'bold',
+    textAlign: 'right',
   },
   button: {
     marginTop: 30,
