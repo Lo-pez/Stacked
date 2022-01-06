@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import data from '../DummyData/dummydata.json';
 
-const WrapData1 = ({navigation}) => {
+const WrapData2 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Animatable.Text
@@ -12,7 +12,7 @@ const WrapData1 = ({navigation}) => {
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        {data.user.username}, your needs
+        WARPDATA2
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInLeft"
@@ -21,7 +21,7 @@ const WrapData1 = ({navigation}) => {
         duration={2000}
         delay={100}
         style={styles.title}>
-        changed throughout the year.
+        TEMP
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInLeft"
@@ -106,7 +106,7 @@ const WrapData1 = ({navigation}) => {
       </Animatable.View>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData2')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData1')}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"
@@ -121,7 +121,7 @@ const WrapData1 = ({navigation}) => {
   );
 };
 
-export default WrapData1;
+export default WrapData2;
 
 const styles = StyleSheet.create({
   container: {

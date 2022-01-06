@@ -8,6 +8,7 @@ import SignUp from '../components/SignUp';
 import SplashScreen from '../components/SplashScreen';
 import Wrapped from '../components/Wrapped';
 import WrapData1 from '../components/WrapData1';
+import WrapData2 from '../components/WrapData2';
 
 const Stack = createStackNavigator();
 
@@ -53,6 +54,11 @@ function MyStack() {
       <Stack.Screen
         name="WrapData1"
         component={WrapData1}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="WrapData2"
+        component={WrapData2}
         options={{headerShown: false}}
       />
     </Stack.Navigator>

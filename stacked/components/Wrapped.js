@@ -13,7 +13,7 @@ const Wrapped = ({navigation}) => {
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        {data.user.name},
+        {data.user.username},
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInUp"
