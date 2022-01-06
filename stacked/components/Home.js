@@ -1,5 +1,11 @@
 import React from 'react'
-import { Image, TouchableOpacity, StyleSheet, Text, View } from 'react-native'
+import { 
+    Image, 
+    TouchableOpacity, 
+    StyleSheet, 
+    Text, 
+    View 
+} from 'react-native'
 import Title from './Title'
 
 const Home = ({navigation}) => {
@@ -15,7 +21,7 @@ const Home = ({navigation}) => {
                     resizeMode="contain"
                 />
             </View>
-            <TouchableOpacity onPress={()=>navigation.navigate('UserData')} style={styles.button}>
+            <TouchableOpacity onPress={()=>navigation.navigate('SplashScreen')} style={styles.button}>
                 <Text style={styles.buttonText}>Start</Text>
             </TouchableOpacity>
         </View>

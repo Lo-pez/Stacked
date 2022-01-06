@@ -1,5 +1,11 @@
 import React from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { 
+    Image, 
+    StyleSheet, 
+    Text, 
+    TouchableOpacity, 
+    View 
+} from 'react-native'
 
 const Review = (navigation) => {
     return (
@@ -11,7 +17,6 @@ const Review = (navigation) => {
             <View style={styles.bannerContainer}>
             <Image 
                     source={{
-                        // <a href="https://storyset.com/business">Business illustrations by Storyset</a>
                         uri:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F60%2Fee%2F65%2F60ee651c35897acfc77e7cb33ac5b996.png&f=1&nofb=1'
                     }} 
                     style={styles.banner}
