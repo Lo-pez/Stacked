@@ -1,30 +1,59 @@
-{  
-    "user": {  
-        "name":       "sonoo",   
-        "salary":      56000,   
-        "spending":    100000,
-        "saving": 500,
-        "Most visited restaurant": "Arby's",
-        "metrics": {
-            "Food": 12,
-            "Entertainment": 24,
-            "Rent": 15,
-            "Savings": 25,
-            "Investments": 24
-        },
-        "metrics_old": {
-            "Food": 12,
-            "Entertainment": 24,
-            "Rent": 24,
-            "Savings": 20,
-            "Investments": 20
-        },
-        "comparable_metrics": {
-            "Food": 10,
-            "Entertainment": 16,
-            "Rent": 50,
-            "Savings": 12,
-            "Investments": 12
-        }
-    }  
-}  
+{
+  "user": {
+    "username": "Bob",
+    "salary": 56000,
+    "spending": 100000,
+    "new_metrics": {
+      "needs": {
+        "rent": 1500,
+        "groceries": 120,
+        "utilities": 40
+      },
+      "wants": {
+        "entertainment": 24,
+        "vacations": 400,
+        "dining_out": 30
+      },
+      "financial_goals": {
+        "savings": 25,
+        "investments": 24
+      }
+    },
+    "old_metrics": {
+      "needs": {
+        "rent": 1500,
+        "groceries": 100,
+        "utilities": 30
+      },
+      "wants": {
+        "entertainment": 240,
+        "vacations": 200,
+        "dining_out": 70
+      },
+      "financial_goals": {
+        "savings": 250,
+        "investments": 400
+      }
+    },
+    "comparable_metrics": {
+      "needs": {
+        "rent": 0,
+        "groceries": 120,
+        "utilities": 40
+      },
+      "wants": {
+        "entertainment": 24,
+        "vacations": 400,
+        "dining_out": 30
+      },
+      "financial_goals": {
+        "savings": 25,
+        "investments": 24
+      }
+    },
+    "fun_metrics": {
+      "mostVisitedResturant": "Subway",
+      "investment_metric": 10
+    }
+  }
+}

@@ -43,7 +43,7 @@ const Wrapped = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('Wrapped')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData1')}>
           <Animatable.Text
             animation="fadeInLeft"
             easing="ease-out-cubic"
