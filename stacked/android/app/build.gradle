@@ -1,5 +1,3 @@
-apply plugin: "com.android.application"
-
 import com.android.build.OutputFile
 
 /**
@@ -82,6 +80,9 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services' // <- Add this line
+
 
 /**
  * Set this to true to create two separate APKs instead of one:

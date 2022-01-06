@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "938120652365",
+    "project_id": "stacked-743d3",
+    "storage_bucket": "stacked-743d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938120652365:android:05f0cc1ff974a7cbb29e04",
+        "android_client_info": {
+          "package_name": "com.stacked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938120652365-hpomb8rmp3fclko7pd1dsf07hm384f88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALXyUN8Uv8zM47q1rKOpXrUF4cqt7GDVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938120652365-hpomb8rmp3fclko7pd1dsf07hm384f88.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
