@@ -131,7 +131,7 @@ const SignUp = ({navigation}) => {
                         colors = {['#004879','#D22E1E']}
                         style={styles.signIn}
                     >
-                        <Text style={styles.text}>Sign Up</Text>
+                        <Text style={styles.text}>Sign Up →</Text>
                     </LinearGradient>
                 </TouchableOpacity>
 

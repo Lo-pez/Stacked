@@ -22,7 +22,7 @@ const Home = ({navigation}) => {
                 />
             </View>
             <TouchableOpacity onPress={()=>navigation.navigate('SplashScreen')} style={styles.button}>
-                <Text style={styles.buttonText}>Start</Text>
+                <Text style={styles.buttonText}>Start →</Text>
             </TouchableOpacity>
         </View>
     )
