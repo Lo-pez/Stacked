@@ -6,8 +6,6 @@ import UserData from '../components/UserData';
 import SignIn from '../components/SignIn';
 import SignUp from '../components/SignUp';
 import SplashScreen from '../components/SplashScreen';
-import Wrapped from '../components/Wrapped'
-
 import Wrapped from '../components/Wrapped';
 import WrapData1 from '../components/WrapData1';
 
