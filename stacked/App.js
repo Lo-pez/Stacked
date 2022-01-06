@@ -9,7 +9,8 @@ const App = () => {
   return (
     <View style={styles.container}>
       {/* <Home /> */}
-      <UserData />
+      {/* <UserData /> */}
+      <Review />
     </View>
   );
 };
