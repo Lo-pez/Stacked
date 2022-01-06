@@ -90,12 +90,14 @@ const SignIn = ({navigation}) => {
             </View>
 
             <View style={styles.button}>
-                <LinearGradient
-                    colors = {['#004879','#004894']}
-                    style={styles.signIn}
-                >
-                    <Text style={styles.text}>Sign In</Text>
-                </LinearGradient>
+                <TouchableOpacity onPress = {() => navigation.navigate('Wrapped')} style={styles.signIn}>
+                    <LinearGradient
+                        colors = {['#004879','#D22E1E']}
+                        style={styles.signIn}
+                    >
+                        <Text style={styles.text}>Sign In</Text>
+                    </LinearGradient>
+                </TouchableOpacity>
 
                 <TouchableOpacity 
                     onPress = {() => navigation.navigate('SignUp')}
