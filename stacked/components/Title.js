@@ -1,22 +1,15 @@
 import React from 'react'
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
-const Title = () => {
+const Title = ({}) => {
     return (
-        <View>
-            <Text>
-            <View style={styles.bannerContainer}>
-                <Image 
-                    source={{
-                        uri:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F60%2Fee%2F65%2F60ee651c35897acfc77e7cb33ac5b996.png&f=1&nofb=1'
-                    }} 
-                    style={styles.banner}
-                    resizeMode="contain"
-                />
-            </View>
-            <TouchableOpacity>
-                <Text>Start</Text>
-            </TouchableOpacity>
+        <View style={styles.container}>
+            <Text style={styles.titleWhite}> 
+                sta
+                <Text style={styles.titleRed}>
+                    ck
+                </Text>
+                ed
             </Text>
         </View>
     )
@@ -25,12 +18,16 @@ const Title = () => {
 export default Title
 
 const styles = StyleSheet.create({
-    banner: {
-        height: 300,
-        width: 300,
+    titleWhite: {
+        fontSize: 30,
+        fontWeight: '600',
     },
-    bannerContainer: {
+    titleRed: {
+        color: '#d22e1e',
+    },
+    container: {
+        paddingVertical: 16,
         justifyContent: 'center',
         alignItems: 'center',
-    },
+    }
 })

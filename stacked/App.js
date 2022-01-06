@@ -1,17 +1,17 @@
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react'
 import { StyleSheet, View, Text } from 'react-native'
 import Home from './components/Home';
 import Review from './components/Review';
 import UserData from './components/UserData';
+import MyStack from './navigation';
 
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      {/* <Home /> */}
-      {/* <UserData /> */}
-      <Review />
-    </View>
+      <NavigationContainer>
+        <MyStack /> 
+      </NavigationContainer>
   );
 };
 
