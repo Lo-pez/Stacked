@@ -1,0 +1,36 @@
+import React from 'react'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+
+const Title = () => {
+    return (
+        <View>
+            <Text>
+            <View style={styles.bannerContainer}>
+                <Image 
+                    source={{
+                        uri:'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F60%2Fee%2F65%2F60ee651c35897acfc77e7cb33ac5b996.png&f=1&nofb=1'
+                    }} 
+                    style={styles.banner}
+                    resizeMode="contain"
+                />
+            </View>
+            <TouchableOpacity>
+                <Text>Start</Text>
+            </TouchableOpacity>
+            </Text>
+        </View>
+    )
+}
+
+export default Title
+
+const styles = StyleSheet.create({
+    banner: {
+        height: 300,
+        width: 300,
+    },
+    bannerContainer: {
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+})

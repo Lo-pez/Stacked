@@ -8,7 +8,8 @@ import UserData from './components/UserData';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Home />
+      {/* <Home /> */}
+      <UserData />
     </View>
   );
 };
