@@ -101,7 +101,7 @@ const WrapData1 = ({route,navigation}) => {
             fontWeight: 'bold',
             color: '#000',
           }}>
-          (You saved $100 on rent! 🏠)
+          (You saved ${user.old_metrics.needs.rent - user.new_metrics.needs.rent} on rent! 🏠)
         </Animatable.Text>
       </Animatable.View>
 

@@ -83,7 +83,7 @@
     },
     "old_metrics": {
       "needs": {
-        "rent": 2000,
+        "rent": 1000,
         "groceries": 600,
         "utilities": 30
       },
