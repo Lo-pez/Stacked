@@ -1,8 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-//import data from '../DummyData/dummydata.json';
-//Spotify wrapped
+//finance wrapped
 
 const Wrapped = ({route,navigation}) => {
   const {user} = route.params;
