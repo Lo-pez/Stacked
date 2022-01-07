@@ -23,7 +23,9 @@ const WrapData2 = ({navigation}) => {
         style={{marginTop: 80}}>
         <Text style={styles.compare}>
           <Text>You spent </Text>
-          <Text>${data.user.new_metrics.wants.vacations}</Text>
+          <Text style={{fontSize: 34, color: '#004977'}}>
+            ${data.user.new_metrics.wants.vacations}
+          </Text>
         </Text>
 
         <Text style={styles.compare}>on Vacation this month!</Text>
@@ -52,7 +54,7 @@ const WrapData2 = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData3')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData4')}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"
