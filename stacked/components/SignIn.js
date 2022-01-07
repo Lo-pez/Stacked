@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../DummyData/dummydata.json';
-
+import Share from "react-native-share"
 import { 
     View, 
     Text, 
@@ -14,6 +14,9 @@ import {
 import * as Animatable from 'react-native-animatable';
 import LinearGradient from 'react-native-linear-gradient';
 
+const title = "Stacked 2021";
+const message = "Check out my Stacked 2021 report!";
+
 const SignIn = ({navigation}) => {
     const [userInfo, setUserInfo] = React.useState({
         email: '',
@@ -21,6 +24,21 @@ const SignIn = ({navigation}) => {
         checkTextInputChange: false,
         passwordEntry: true,
     });
+
+    const options = {
+        title,
+        message,
+      };
+
+    const [image, setImage] = React.useState(
+        "https://files.slack.com/files-pri/T23RHNDU5-F02TQC0JU9W/stacked_logo.png"
+    );
+    const share = async (customOptions = options) => {
+        try {
+        await Share.open(customOptions);
+        } catch (err) {
+        console.log(err);
+        }
 
     const textInputChange = (input) => {
         
