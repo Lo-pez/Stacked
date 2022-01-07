@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import data from '../DummyData/dummydata.json';
+//import data from '../DummyData/dummydata.json';
 //Spotify wrapped
 
-const Wrapped = ({navigation}) => {
+const Wrapped = ({route,navigation}) => {
+  const {user} = route.params;
   return (
     <View style={styles.container}>
       <Animatable.Text
@@ -13,7 +14,7 @@ const Wrapped = ({navigation}) => {
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        {data.user.username},
+        {user.username},
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInUp"
@@ -43,7 +44,7 @@ const Wrapped = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData1')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData1',{user:user})}>
           <Animatable.Text
             animation="fadeInLeft"
             easing="ease-out-cubic"

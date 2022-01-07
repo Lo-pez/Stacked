@@ -1,11 +1,15 @@
 import React from 'react';
+import data from '../DummyData/dummydata.json';
+
 import { 
     View, 
     Text, 
     TouchableOpacity, 
     TextInput,
     Platform,
-    StyleSheet ,
+    StyleSheet, 
+    ToastAndroid,
+    Alert,
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import LinearGradient from 'react-native-linear-gradient';
@@ -15,11 +19,11 @@ const SignIn = ({navigation}) => {
         email: '',
         password: '',
         checkTextInputChange: false,
-        passwordEntry: true
-
+        passwordEntry: true,
     });
 
     const textInputChange = (input) => {
+        
         if ( input !== 0) {
             setUserInfo({
                 ... userInfo,
@@ -48,6 +52,18 @@ const SignIn = ({navigation}) => {
             password: input,
 
         })
+    }
+
+    const handleSignIn = ()=>{
+        
+        for(let x=0;x<data.user.length;x++){
+            let user = data.user[x];
+            if(user.email==userInfo.email&&user.password == userInfo.password){
+                navigation.navigate('Wrapped',{user:user});
+                return;
+            }
+        }
+        Alert.alert("Invalid email or password, please try again.");
     }
 
     return (
@@ -90,7 +106,7 @@ const SignIn = ({navigation}) => {
             </View>
 
             <View style={styles.button}>
-                <TouchableOpacity onPress = {() => navigation.navigate('Wrapped')} style={styles.signIn}>
+                <TouchableOpacity onPress = {() => handleSignIn()} style={styles.signIn}>
                     <LinearGradient
                         colors = {['#004879','#D22E1E']}
                         style={styles.signIn}

@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import data from '../DummyData/dummydata.json';
 
-const WrapData4 = ({navigation}) => {
+const WrapData4 = ({route,navigation}) => {
+  const {user} = route.params;
   return (
     <View style={styles.container}>
       <Animatable.Text
@@ -31,7 +31,7 @@ const WrapData4 = ({navigation}) => {
           style={styles.compare}>
           <Text>You gained </Text>
           <Text style={{fontSize: 35, lineHeight: 35}}>
-            {data.user.fun_metrics.investment_metric}%
+            {user.fun_metrics.investment_metric}%
           </Text>
           <Text> profit</Text>
         </Animatable.Text>
@@ -79,7 +79,7 @@ const WrapData4 = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData5')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData5',{user:user})}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"

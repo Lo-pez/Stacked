@@ -2,6 +2,8 @@
   "user":[
     {
     "username": "Bob",
+    "email":"bob@gmail.com",
+    "password":"bob",
     "salary": 56000,
     "spending": 100000,
     "new_metrics": {
@@ -58,7 +60,9 @@
     }
   },
   {
-    "username": "ace",
+    "username": "Ace",
+    "email":"ace@gmail.com",
+    "password":"ace",
     "salary": 78000,
     "spending": 70000,
     "new_metrics": {
@@ -116,6 +120,8 @@
   },
   {
     "username": "Jeff",
+    "email":"jeff@gmail.com",
+    "password":"jeff",
     "salary": 31000,
     "spending": 30000,
     "new_metrics": {
