@@ -1,5 +1,6 @@
 {
-  "user": {
+  "user":[
+    {
     "username": "Bob",
     "salary": 56000,
     "spending": 100000,
@@ -55,5 +56,120 @@
       "mostVisitedResturant": "Subway",
       "investment_metric": 10
     }
+  },
+  {
+    "username": "ace",
+    "salary": 78000,
+    "spending": 70000,
+    "new_metrics": {
+      "needs": {
+        "rent": 2000,
+        "groceries": 520,
+        "utilities": 300
+      },
+      "wants": {
+        "entertainment": 1000,
+        "vacations": 900,
+        "dining_out": 300
+      },
+      "financial_goals": {
+        "savings": 25,
+        "investments": 24
+      }
+    },
+    "old_metrics": {
+      "needs": {
+        "rent": 2000,
+        "groceries": 600,
+        "utilities": 30
+      },
+      "wants": {
+        "entertainment": 140,
+        "vacations": 200,
+        "dining_out": 70
+      },
+      "financial_goals": {
+        "savings": 150,
+        "investments": 300
+      }
+    },
+    "comparable_metrics": {
+      "needs": {
+        "rent": 100,
+        "groceries": 320,
+        "utilities": 60
+      },
+      "wants": {
+        "entertainment": 34,
+        "vacations": 320,
+        "dining_out": 60
+      },
+      "financial_goals": {
+        "savings": 25,
+        "investments": 24
+      }
+    },
+    "fun_metrics": {
+      "mostVisitedResturant": "Chick-fil-A",
+      "investment_metric": 10
+    }
+  },
+  {
+    "username": "Jeff",
+    "salary": 31000,
+    "spending": 30000,
+    "new_metrics": {
+      "needs": {
+        "rent": 1000,
+        "groceries": 620,
+        "utilities": 50
+      },
+      "wants": {
+        "entertainment": 100,
+        "vacations": 100,
+        "dining_out": 60
+      },
+      "financial_goals": {
+        "savings": 15,
+        "investments": 9
+      }
+    },
+    "old_metrics": {
+      "needs": {
+        "rent": 900,
+        "groceries": 200,
+        "utilities": 8
+      },
+      "wants": {
+        "entertainment": 140,
+        "vacations": 90,
+        "dining_out": 50
+      },
+      "financial_goals": {
+        "savings": 150,
+        "investments": 600
+      }
+    },
+    "comparable_metrics": {
+      "needs": {
+        "rent": 200,
+        "groceries": 220,
+        "utilities": 60
+      },
+      "wants": {
+        "entertainment": 44,
+        "vacations": 220,
+        "dining_out": 60
+      },
+      "financial_goals": {
+        "savings": 20,
+        "investments": 20
+      }
+    },
+    "fun_metrics": {
+      "mostVisitedResturant": "Burger King",
+      "investment_metric": 7
+    }
   }
+]
 }
