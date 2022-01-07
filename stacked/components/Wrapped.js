@@ -22,7 +22,7 @@ const Wrapped = ({navigation}) => {
         duration={2000}
         delay={100}
         style={styles.title}>
-        your yearly
+        your monthly
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInUp"
@@ -72,17 +72,17 @@ const styles = StyleSheet.create({
   },
   top: {
     //textAlign: 'center',
-    marginTop: 100,
-    fontSize: 65,
+    marginTop: 130,
+    fontSize: 64,
     fontWeight: 'bold',
-    lineHeight: 70,
+    lineHeight: 60,
     color: '#ffffff',
   },
   title: {
     //textAlign: 'center',
-    fontSize: 65,
+    fontSize: 56,
     fontWeight: 'bold',
-    lineHeight: 70,
+    lineHeight: 60,
     color: '#ffffff',
   },
   desc: {

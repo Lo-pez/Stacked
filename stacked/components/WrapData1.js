@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   funFact: {
-    marginTop: 190,
+    marginTop: 180,
   },
   button: {
     marginTop: 30,

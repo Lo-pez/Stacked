@@ -54,7 +54,7 @@ const WrapData2 = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData4')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData3')}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"
