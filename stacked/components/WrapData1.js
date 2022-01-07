@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import data from '../DummyData/dummydata.json';
 
-const WrapData1 = ({navigation}) => {
+const WrapData1 = ({route,navigation}) => {
+  const {user} = route.params;
   return (
     <View style={styles.container}>
       <Animatable.Text
@@ -12,7 +12,7 @@ const WrapData1 = ({navigation}) => {
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        {data.user.username}, your needs
+        {user.username}, your needs
       </Animatable.Text>
       <Animatable.Text
         animation="fadeInLeft"
@@ -47,9 +47,9 @@ const WrapData1 = ({navigation}) => {
               textDecorationStyle: 'solid',
               fontSize: 18,
             }}>
-            ${data.user.old_metrics.needs.rent}
+            ${user.old_metrics.needs.rent}
           </Text>
-          <Text> to ${data.user.new_metrics.needs.rent}</Text>
+          <Text> to ${user.new_metrics.needs.rent}</Text>
         </Text>
 
         <Text style={styles.compare}>
@@ -61,9 +61,9 @@ const WrapData1 = ({navigation}) => {
               textDecorationStyle: 'solid',
               fontSize: 18,
             }}>
-            ${data.user.old_metrics.needs.groceries}
+            ${user.old_metrics.needs.groceries}
           </Text>
-          <Text> to ${data.user.new_metrics.needs.groceries}</Text>
+          <Text> to ${user.new_metrics.needs.groceries}</Text>
         </Text>
 
         <Text style={styles.compare}>
@@ -75,9 +75,9 @@ const WrapData1 = ({navigation}) => {
               textDecorationStyle: 'solid',
               fontSize: 18,
             }}>
-            ${data.user.old_metrics.needs.utilities}
+            ${user.old_metrics.needs.utilities}
           </Text>
-          <Text> to ${data.user.new_metrics.needs.utilities}</Text>
+          <Text> to ${user.new_metrics.needs.utilities}</Text>
         </Text>
       </Animatable.View>
 
@@ -106,7 +106,7 @@ const WrapData1 = ({navigation}) => {
       </Animatable.View>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData2')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData2',{user:user})}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"

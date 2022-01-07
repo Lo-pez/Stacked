@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import data from '../DummyData/dummydata.json';
 
-const WrapData2 = ({navigation}) => {
+const WrapData2 = ({route,navigation}) => {
+  const {user} = route.params;
   return (
     <View style={styles.container}>
       <Animatable.Text
@@ -24,7 +24,7 @@ const WrapData2 = ({navigation}) => {
         <Text style={styles.compare}>
           <Text>You spent </Text>
           <Text style={{fontSize: 34, color: '#004977'}}>
-            ${data.user.new_metrics.wants.vacations}
+            ${user.new_metrics.wants.vacations}
           </Text>
         </Text>
 
@@ -39,7 +39,7 @@ const WrapData2 = ({navigation}) => {
         style={{marginTop: 120}}>
         <Text style={styles.compare2}>For contrast,</Text>
         <Text style={styles.compare2}>
-          you spent ${data.user.old_metrics.wants.vacations} last
+          you spent ${user.old_metrics.wants.vacations} last
         </Text>
         <Text style={styles.compare2}>month for sweet shades.</Text>
       </Animatable.View>
@@ -54,7 +54,7 @@ const WrapData2 = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData3')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData3',{user:user})}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"

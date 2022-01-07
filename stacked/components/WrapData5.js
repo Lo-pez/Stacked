@@ -1,9 +1,9 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import data from '../DummyData/dummydata.json';
 
-const WrapData5 = ({navigation}) => {
+const WrapData5 = ({route,navigation}) => {
+  const {user} = route.params;
   return (
     <View style={styles.container}>
       <Animatable.Text
@@ -31,7 +31,7 @@ const WrapData5 = ({navigation}) => {
             lineHeight: 38,
             fontWeight: 'bold',
           }}>
-          {data.user.fun_metrics.mostVisitedResturant}.
+          {user.fun_metrics.mostVisitedResturant}.
         </Text>
       </Animatable.View>
 
@@ -56,7 +56,7 @@ const WrapData5 = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('Wrapped')}>
+        <TouchableOpacity onPress={() => navigation.navigate('WrapData',{user:user})}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"
