@@ -28,7 +28,7 @@ const WrapData2 = ({navigation}) => {
           </Text>
         </Text>
 
-        <Text style={styles.compare}>on Vacation this month!</Text>
+        <Text style={styles.compare}>on vacation this month!</Text>
       </Animatable.View>
 
       <Animatable.View

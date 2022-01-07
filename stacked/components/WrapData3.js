@@ -7,41 +7,47 @@ const WrapData3 = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Animatable.Text
-        animation="flipInX"
+        animation="fadeInDownBig"
         direction="alternate"
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        Entertain moment
+        Entertain Yourself
       </Animatable.Text>
 
       <Animatable.View
-        animation="flipInX"
+        animation="fadeInUpBig"
         easing="ease-out-cubic"
         duration={2000}
         delay={600}
-        style={{marginTop: 120}}>
-        <Text style={styles.compare}>You gained </Text>
-        <Text style={styles.compare}> profit</Text>
+        style={{marginTop: 60}}>
+        <Text style={styles.compare}>
+          When it comes to entertainment, good time comes along.
+        </Text>
       </Animatable.View>
 
       <Animatable.View
-        animation="flipInY"
+        animation="fadeInUpBig"
         easing="ease-out-cubic"
         duration={2000}
         delay={600}
         style={{marginTop: 20}}>
-        <Text style={styles.compare2}>We think that is an</Text>
-        <Text style={styles.compare2}>amazing achievement.</Text>
+        <Text style={styles.compare2}>You have used</Text>
+        <Text style={styles.compare2}>
+          <Text style={{fontSize: 30, lineHeight: 35}}>
+            ${data.user.new_metrics.wants.entertainment}
+          </Text>
+          <Text> on exciting moments this month.</Text>
+        </Text>
       </Animatable.View>
 
       <Animatable.Text
-        animation="flipInY"
+        animation="fadeInUpBig"
         easing="ease-out-cubic"
         duration={2000}
         delay={1000}
         style={styles.desc}>
-        (seriously. We do. 🥰)
+        (Wooo Hoooo!! 🕺🙌)
       </Animatable.Text>
 
       <View style={styles.button}>
@@ -82,25 +88,22 @@ const styles = StyleSheet.create({
   },
   desc: {
     color: '#ffffff',
-    marginTop: 150,
+    marginTop: 130,
     fontSize: 15,
     lineHeight: 15,
     fontWeight: 'bold',
-    textAlign: 'center',
   },
   compare: {
     color: '#ffffff',
     fontSize: 26,
     lineHeight: 35,
     fontWeight: 'bold',
-    textAlign: 'center',
   },
   compare2: {
     color: '#ffffff',
     fontSize: 26,
     lineHeight: 35,
     fontWeight: 'bold',
-    textAlign: 'center',
   },
   button: {
     color: '#ffffff',
