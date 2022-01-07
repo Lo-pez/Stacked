@@ -29,11 +29,11 @@ const WrapData4 = ({navigation}) => {
           delay={1000}
           duration={2000}
           style={styles.compare}>
-          <Text>You gained </Text>
+          <Text>You made a </Text>
           <Text style={{fontSize: 35, lineHeight: 35}}>
             {data.user.fun_metrics.investment_metric}%
           </Text>
-          <Text> profit</Text>
+          <Text> profit margin</Text>
         </Animatable.Text>
 
         <Animatable.Text

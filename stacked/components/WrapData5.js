@@ -22,7 +22,7 @@ const WrapData5 = ({navigation}) => {
         delay={600}
         style={{marginTop: 50}}>
         <Text style={styles.compare}>You went to lots of</Text>
-        <Text style={styles.compare}>restaurant this month.</Text>
+        <Text style={styles.compare}>restaurants this month.</Text>
         <Text style={styles.compare}>But you really liked</Text>
         <Text
           style={{
@@ -56,14 +56,14 @@ const WrapData5 = ({navigation}) => {
       </Animatable.Text>
 
       <View style={styles.button}>
-        <TouchableOpacity onPress={() => navigation.navigate('WrapData5')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Wrapped')}>
           <Animatable.Text
             animation="fadeInUp"
             easing="ease-out-cubic"
             duration={1500}
             delay={1500}
             style={styles.buttonText}>
-            NEXT
+            BACK
           </Animatable.Text>
         </TouchableOpacity>
       </View>

@@ -5,7 +5,7 @@
     "spending": 100000,
     "new_metrics": {
       "needs": {
-        "rent": 1500,
+        "rent": 1400,
         "groceries": 120,
         "utilities": 40
       },

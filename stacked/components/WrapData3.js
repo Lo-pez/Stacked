@@ -12,7 +12,7 @@ const WrapData3 = ({navigation}) => {
         easing="ease-out-cubic"
         duration={2000}
         style={styles.top}>
-        Entertain moment
+        Profit
       </Animatable.Text>
 
       <Animatable.View
@@ -21,8 +21,8 @@ const WrapData3 = ({navigation}) => {
         duration={2000}
         delay={600}
         style={{marginTop: 120}}>
-        <Text style={styles.compare}>You gained </Text>
-        <Text style={styles.compare}> profit</Text>
+        <Text style={styles.compare}>You made </Text>
+        <Text style={styles.compare}> profit!</Text>
       </Animatable.View>
 
       <Animatable.View

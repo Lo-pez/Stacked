@@ -28,7 +28,7 @@ const WrapData2 = ({navigation}) => {
           </Text>
         </Text>
 
-        <Text style={styles.compare}>on Vacation this month!</Text>
+        <Text style={styles.compare}>on Vacationing this month!</Text>
       </Animatable.View>
 
       <Animatable.View
@@ -37,11 +37,11 @@ const WrapData2 = ({navigation}) => {
         duration={2000}
         delay={600}
         style={{marginTop: 120}}>
-        <Text style={styles.compare2}>To compare,</Text>
+        <Text style={styles.compare2}>For contrast,</Text>
         <Text style={styles.compare2}>
           you spent ${data.user.old_metrics.wants.vacations} last
         </Text>
-        <Text style={styles.compare2}>month for good shades.</Text>
+        <Text style={styles.compare2}>month for sweet shades.</Text>
       </Animatable.View>
 
       <Animatable.Text
