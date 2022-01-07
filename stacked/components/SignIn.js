@@ -82,9 +82,9 @@ const SignIn = ({navigation}) => {
                 <TouchableOpacity onPress={updatePassword}>
                     {/* Security icon */}
                     {userInfo.passwordEntry ?
-                    <Text>Open</Text>
+                    <Text>🔐</Text>
                     :
-                    <Text>Closed</Text>
+                    <Text>🔓</Text>
                     }
                 </TouchableOpacity>
             </View>
