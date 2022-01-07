@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   },
   top: {
     //textAlign: 'center',
-    marginTop: 130,
+    marginTop: 89,
     fontSize: 64,
     fontWeight: 'bold',
     lineHeight: 60,
@@ -80,9 +80,9 @@ const styles = StyleSheet.create({
   },
   title: {
     //textAlign: 'center',
-    fontSize: 56,
+    fontSize: 59,
     fontWeight: 'bold',
-    lineHeight: 60,
+    lineHeight: 65,
     color: '#ffffff',
   },
   desc: {
@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
   },
   button: {
-    marginTop: 180,
+    marginTop: 120,
   },
   buttonText: {
     color: '#ffffff',

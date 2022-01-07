@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   },
   desc: {
     color: '#ffffff',
-    marginTop: 70,
+    marginTop: 78,
     fontSize: 15,
     lineHeight: 15,
     fontWeight: 'bold',

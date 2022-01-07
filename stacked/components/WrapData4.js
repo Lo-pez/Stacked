@@ -20,7 +20,7 @@ const WrapData4 = ({navigation}) => {
         easing="ease-out-cubic"
         duration={2000}
         delay={600}
-        style={{marginTop: 120}}>
+        style={{marginTop: 128}}>
         <Animatable.Text
           animation="pulse"
           easing="ease-in-out"
@@ -33,7 +33,7 @@ const WrapData4 = ({navigation}) => {
           <Text style={{fontSize: 35, lineHeight: 35}}>
             {data.user.fun_metrics.investment_metric}%
           </Text>
-          <Text> profit margin</Text>
+          <Text> profit</Text>
         </Animatable.Text>
 
         <Animatable.Text
@@ -44,7 +44,7 @@ const WrapData4 = ({navigation}) => {
           delay={1100}
           duration={2000}
           style={styles.compare}>
-          from your
+          margin from your
         </Animatable.Text>
 
         <Animatable.Text
