@@ -39,6 +39,7 @@ const SignIn = ({navigation}) => {
         } catch (err) {
         console.log(err);
         }
+    }
 
     const textInputChange = (input) => {
         
